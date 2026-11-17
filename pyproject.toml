@@ -1,0 +1,17 @@
+[project]
+name = "factor-check"
+version = "2.2.0"
+description = "Event-factor checks for industry-direction cards"
+requires-python = ">=3.11"
+dependencies = ["akshare==1.20.65"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
